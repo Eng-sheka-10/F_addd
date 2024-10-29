@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.todolist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Orange">
+        <Label Content="To Do list" Margin="23,21,575,339" FontFamily="Times New Roman" FontSize="40" Foreground="Aqua" Background="White" Padding="12,12,12,12" RenderTransformOrigin="0.195,0.289"></Label>
+        <TextBox x:Name="input_task" Margin="292,64,292,337"></TextBox>
+        <ListBox x:Name="list_view" Margin="254,130,10,72" ></ListBox>
+        <Button Content="add" Margin="632,52,82,337" Click="add"/>
+        <Button  Content="Remove_task" Margin="5,130,557,246" Click="remove_task_clicked_Click_1"/>
+        <Button Margin="74,246,626,123" Content="Done(^_^)" Click="Button_Click"></Button>
+    </Grid>
+</Window>
